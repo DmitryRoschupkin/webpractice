@@ -256,3 +256,75 @@ body {
     border-radius: 15px;
     padding: 40px;
 }
+
+.contact {
+    padding-left: 10%;
+}
+
+.contact__title {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 4px;
+    color: cadetblue;
+    margin-bottom: 10px;
+}
+
+.contact__form-legend{
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+}
+
+.contact__form fieldset {
+    border: none;
+    margin-bottom: 30px;
+}
+
+.contact__form-label {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffefcc;
+}
+
+.contact__form-input, .contact__form-textarea {
+    background-color: black;
+    border: 1px grey solid;
+    padding: 10px;
+    border-radius: 7px;
+    width: 300px;
+    margin-bottom: 20px;
+    color: #ffefcc;
+    transition: box-shadow .4s;
+}
+
+.contact__form-input:hover,
+.contact__form-textarea:hover {
+    box-shadow: 0 0 10px #ffefcc;
+}
+
+.contact__form-textarea {
+    width: 700px;
+    resize: none;
+}
+
+.contact__form-btn button {
+    background-color: black;
+    color: #ffefcc;
+    border: 1px solid #ffefcc;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all .4s;
+}
+
+.contact__form-btn button:hover {
+    background-color: #001b00;
+    color: #00b900;
+    border: 1px solid #00b900;
+    box-shadow: 0 0 20px #00b900;
+    letter-spacing: 3px;
+}

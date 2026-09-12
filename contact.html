@@ -3,77 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact Us</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div>
-        <h1>AurumSound</h1>
-        <nav>
+    <div class="page-header">
+        <h1 class="page-header__logo">AurumSound</h1>
+        <nav class="page-header__nav">
             <a href="index.html">Main</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
         </nav>
     </div>
-    <main>
-        <div>
+    <main class="contact">
+        <div class="contact__title">
             <h1>Contact Us</h1>
         </div>
-        <div>
-            <form>
+        <div class="contact__form-wrapper">
+            <form class="contact__form">
                 <fieldset>
-                    <legend>Join our music label!</legend>
+                    <legend class="contact__form-legend">Join our music label!</legend>
 
-                    <label for="artist-name">Artist name: </label><br>
+                    <label for="artist-name" class="contact__form-label">Artist name: </label><br>
                     <input type="text"
                            id="artist-name"
                            name="artist-name"
                            placeholder="Georg Trenkle"
                            maxlength="50"
-                           required>
+                           required
+                           class="contact__form-input">
                     <br>
 
-                    <label for="email">Email: </label><br>
+                    <label for="email" class="contact__form-label">Email: </label><br>
                     <input type="email"
                            id="email"
                            name="email"
                            placeholder="artist@example.com"
-                           required>
+                           required
+                           class="contact__form-input">
                     <br>
 
-                    <label for="demo-url">Link to portfolio/demo: </label><br>
+                    <label for="demo-url" class="contact__form-label">Link to portfolio/demo: </label><br>
                     <input type="url"
                            id="demo-url"
                            name="demo-url"
                            placeholder="https://soundcloud.com/your-demo"
-                           required>
+                           required
+                           class="contact__form-input">
                     <br>
 
-                    <label for="experience">Years of active music experience: </label><br>
+                    <label for="experience" class="contact__form-label">Years of active music experience: </label><br>
                     <input type="number"
                            id="experience"
                            name="experience"
                            min="0" max="50"
-                           value="1">
+                           value="1"
+                           required
+                           class="contact__form-input">
                     <br>
                 </fieldset>
 
                 <fieldset>
-                    <legend>Membership Tier:</legend>
+                    <legend class="contact__form-legend">Membership Tier:</legend>
 
                     <input type="radio" id="tier-standard" name="tier" value="standard" checked>
-                    <label for="tier-standard">Standard Artist</label><br>
+                    <label for="tier-standard" class="contact__form-label">Standard Artist</label><br>
 
                     <input type="radio" id="tier-label-member" name="tier" value="label_member">
-                    <label for="tier-label-member">Label Member (Discounted Distribution & Higher Royalty)</label>
+                    <label for="tier-label-member" class="contact__form-label">Label Member (Discounted Distribution & Higher Royalty)</label>
                 </fieldset>
 
-                <label for="about">Tell us about your music & future releases: </label><br>
+                <label for="about" class="contact__form-label">Tell us about your music & future releases: </label><br>
                 <textarea id="about"
                           name="about"
                           cols="40" rows="10"
                           maxlength="500"
-                          placeholder="Describe your sound, upcoming singles or EPs..."></textarea>
+                          placeholder="Describe your sound, upcoming singles or EPs..."
+                          class="contact__form-textarea"></textarea>
 
-                <div>
+                <div class="contact__form-btn">
                     <button type="submit">Submit application!</button>
                 </div>
             </form>
