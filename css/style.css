@@ -76,11 +76,8 @@ body {
     letter-spacing: 4px;
 }
 
-.content {
-
-}
-
-.content-title-wrapper {
+.content-title-wrapper,
+.about-title-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -176,4 +173,86 @@ body {
 
 .footer__aitu p {
     padding-top: 3px;
+}
+
+.about__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 10vh;
+}
+
+.inner-logo {
+    color: #ffefcc;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.about-content {
+    display: flex;
+    width: 100%;
+}
+
+.about-content__best-album {
+    display: flex;
+    border: 1px white solid;
+    margin-left: 10%;
+    gap: 20px;
+    padding: 30px;
+    letter-spacing: 4px;
+}
+
+.about-content__best-album-meta-descr {
+    color: cadetblue;
+}
+
+.about-content__best-album-cover img{
+    max-width: 400px;
+}
+
+.about-content__quotation {
+    max-width: 25vw;
+    margin-left: 3vw;
+    background-color: #171717;
+    height: fit-content;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.about-content__quotation-text {
+    font-style: italic;
+    font-size: 18px;
+    margin-bottom: 5vh;
+}
+
+.about-content__quotation-author {
+    color: cadetblue;
+}
+
+.about-lists {
+    display: flex;
+    margin-top: 15vh;
+    justify-content: center;
+    gap: 150px;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.about-lists ul, .about-lists ol {
+    max-width: 300px;
+}
+
+.about-lists__list-title {
+    text-transform: uppercase;
+    color: cadetblue;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.about-history, .about-facts {
+    background-color: #171717;
+    border-radius: 15px;
+    padding: 40px;
 }
