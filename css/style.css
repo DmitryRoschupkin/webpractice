@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "ITC Avant Garde Gothic";
+    src: url("../fonts/avantgarde_demi.ttf") format("trueType");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'ITC Avant Garde Gothic', sans-serif;
+    line-height: 1.55;
+}
+
+.page-header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-header__nav {
+    margin-right: 3em;
+}
+
+.page-header a{
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 20px;
+    color: #ffefcc;
+    letter-spacing: 2px;
+    transition: text-shadow .4s, letter-spacing .4s;
+}
+
+.page-header a:hover {
+    text-shadow: 0 0 10px #ffefcc;
+    letter-spacing: 4px;
+}
+
+.page-header__logo {
+    text-transform: uppercase;
+    color: #ffefcc;
+    letter-spacing: 10px;
+}
+
+.header {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5%;
+    letter-spacing: 4px;
+}
+
+.header__btn {
+    width: fit-content;
+    color: white;
+    border: 1px white solid;
+    border-radius: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 8px;
+    margin-top: 1em;
+    transition: text-shadow .4s, letter-spacing .4s, color .4s;
+}
+
+.header__btn:hover {
+    text-shadow: 0 0 10px #ffefcc;
+    color: #ffefcc;
+    letter-spacing: 4px;
+}
+
+.content {
+
+}
+
+.content-title-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vh;
+    letter-spacing: 4px;
+}
+
+.content-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20vh;
+}
+
+.content-images__title {
+    letter-spacing: 4px;
+    font-size: 42px;
+    margin-bottom: 10vh;
+}
+
+.content-images__row {
+    display: flex;
+    gap: 200px;
+}
+
+.content-images__row img {
+    max-width: 30vw;
+    border-radius: 20px;
+    transition: box-shadow .4s, transform .4s;
+    cursor: pointer;
+}
+
+.content-images__row img:hover {
+    box-shadow: 0 0 40px #626262;
+    transform: translateY(-2px);
+}
+
+.content-table-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-table-section__title {
+    font-size: 28px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.table {
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    font-size: .95rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 14px 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.table__head{
+    border-bottom: 1px white solid;
+}
+
+.table-privilege {
+    color: darkgreen;
+    background-color: rgba(46, 204, 113, 0.08);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    color: grey;
+    letter-spacing: 2px;
+}
+
+.footer__aitu {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer__aitu img {
+    max-width: 30px;
+}
+
+.footer__aitu p {
+    padding-top: 3px;
+}

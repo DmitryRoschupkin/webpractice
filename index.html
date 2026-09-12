@@ -3,27 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <title>AurumSound</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>AurumSound</h1>
-        <nav>
-            <a href="">About</a>
-            <a href="">Contact</a>
+    <div class="page-header">
+        <h1 class="page-header__logo">AurumSound</h1>
+        <nav class="page-header__nav">
+            <a href="index.html">Main</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
         </nav>
+    </div>
+    <header class="header">
+        <h1 class="header__logo">The best music label in Kazakhstan</h1>
+        <a class="header__btn" href="contact.html">Become a part of us!</a>
     </header>
-    <main>
-        <h1>The best music label in Kazakhstan</h1>
-        <h2>We create and support unique music diamonds</h2>
-        <h2>If you are like that - contact us!</h2>
-        <div>
-            <p>What we offer:</p>
-            <img src="/images/repa.jpg" alt="Repetition process">
-            <img src="/images/studio.jpg" alt="Our studio">
+    <main class="content">
+        <div class="content-title-wrapper">
+            <h2 class="content__title">We create and support unique music diamonds</h2>
+            <h2 class="content__subtitle">If you are like that - contact us!</h2>
+        </div>
+        <div class="content-images">
+            <p class="content-images__title">What we offer:</p>
+            <div class="content-images__row">
+                <img src="/images/repa.jpg" alt="Repetition process">
+                <img src="/images/studio.jpg" alt="Our studio">
+            </div>
+        </div>
+        <div class="content-table-section">
+            <h3 class="content-table-section__title">Price list</h3>
+            <table class="table">
+                <thead class="table__head">
+                    <tr class="table__row">
+                        <th scope="col"></th>
+                        <th scope="col">Single</th>
+                        <th scope="col">EP</th>
+                        <th scope="col">Album</th>
+                        <th scope="col">LP/Deluxe</th>
+                    </tr>
+                </thead>
+                <tbody class="table__body">
+                    <tr>
+                        <th scope="row">Price</th>
+                        <td>$15</td>
+                        <td>$35</td>
+                        <td>$60</td>
+                        <td>$90</td>
+                    </tr>
+                    <tr class="table-privilege">
+                        <th scope="row">For label members</th>
+                        <td>$10</td>
+                        <td>$25</td>
+                        <td>$45</td>
+                        <td>$70</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Royalty</th>
+                        <td colspan="2">85%</td>
+                        <td colspan="2">90%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Tracks amount</th>
+                        <td>1-2</td>
+                        <td>3-6</td>
+                        <td>7-12</td>
+                        <td>13+</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Distribution timeframe</th>
+                        <td>3-5 days</td>
+                        <td>1-2 weeks</td>
+                        <td>2-3 weeks</td>
+                        <td>3-4 weeks</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </main>
-    <footer>
-        <p>&copy; Dmitriy Rochshupkin IT-2505 AITU</p>
+    <footer class="footer">
+        <p>&copy; Dmitriy Rochshupkin, 2026</p>
+        <p>IT-2505</p>
+        <div class="footer__aitu">
+            <img src="images/aitu_logo.png" alt="aitu logo">
+            <p>AITU</p>
+        </div>
     </footer>
 </body>
 </html>
