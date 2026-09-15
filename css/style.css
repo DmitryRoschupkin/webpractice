@@ -287,10 +287,16 @@ body {
     margin-bottom: 30px;
 }
 
-.contact__form-label {
+.contact__form-label,
+.contact__form-label-radio {
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #ffefcc;
+}
+
+.contact__form-radio,
+.contact__form-label-radio{
+    cursor: pointer;
 }
 
 .contact__form-input, .contact__form-textarea {
@@ -307,6 +313,11 @@ body {
 .contact__form-input:hover,
 .contact__form-textarea:hover {
     box-shadow: 0 0 10px #ffefcc;
+}
+
+.contact__form-input:focus,
+.contact__form-textarea:focus {
+    box-shadow: 0 0 20px #ffefcc;
 }
 
 .contact__form-textarea {
